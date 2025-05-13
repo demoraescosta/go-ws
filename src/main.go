@@ -10,7 +10,7 @@ import (
 
 type Page struct {
     Title string
-    Body []byte // byte slice instead of string because of unix c-isms
+    Body []byte // byte slice instead of string because of unix's c-isms
 }
 
 func (p *Page) save() error {
