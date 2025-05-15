@@ -1,8 +1,10 @@
 #!/bin/bash
 # go-ws: webserver implementation in go
 
-go-ws:
-	go build -o bin/$@ src/main.go
+AIR:=air
 
-run: go-ws
-	bin/$<
+bench:
+	$(AIR) bench
+
+run: 
+	$(AIR) server --port 8080
